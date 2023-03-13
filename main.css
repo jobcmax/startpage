@@ -1,0 +1,39 @@
+body {
+	background-color: #101419;
+	font-family: monospace;
+}
+
+td {
+	text-align: center;
+	padding-left: 1em;
+	padding-right: 1em;
+}
+
+th {
+	padding: 1em;
+	color: #dee1e6;
+}
+
+a {
+	color: #70a5eb;
+	text-decoration: none;
+}
+
+a:hover {
+	color: #79c3ee;
+	text-decoration: underline;
+}
+
+html, body {
+    height: 100%;
+}
+
+html {
+    display: table;
+    margin: auto;
+}
+
+body {
+    display: table-cell;
+    vertical-align: middle;
+}
