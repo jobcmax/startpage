@@ -3,26 +3,47 @@
 	<head>
 		<meta charset="utf-8">
 		<meta name="viewport" content="width=device-width, initial-scale=1">
-		<title>~</title>
+		<title>Home</title>
+		<!-- <link rel="icon" href="favicon.svg"> -->
 		<link rel="stylesheet" type="text/css" href="main.css">
 	</head>
-	<body>
-		<table style="width:20%">
-			<tr>
-				<th>social</th>
-				<th>coding</th>
-			</tr>
-			<tr>
-				<td><a href="https://discord.com/channels/@me">discord</a></td>
-				<td><a href="https://github.com/">github</a></td>
-			</tr>
-			<tr>
-				<td><a href="https://web.whatsapp.com">whatsapp</a></td>
-				<td><a href="https://www.w3schools.com/">w3schools</a></td>
-			</tr>
-			<tr>
-				<td><a href="https://www.reddit.com/">reddit</a></td>
-			</tr>
-		</table>
+	<body onload="startTime(), dateCheck()">
+		<div class="root">
+			<div class="grid">
+				<div class="dates">
+					<h1 id="time"></h1>
+					<p id="date"></p>
+				</div>
+				<div class="icontainer">
+					<div class="icons" onclick="window.location='http://github.com';">
+						<img src="svg/github.svg">
+					</div>
+					<div class="icons" onclick="window.location='https://discord.com/channels/@me';">
+						<img src="svg/discord.svg">
+					</div>
+					<div class="icons" onclick="window.location='https://soundcloud.com/discover';">
+						<img src="svg/music.svg">
+					</div>
+					<div class="icons" onclick="window.location='https://web.whatsapp.com/';">
+						<img src="svg/whatsapp.svg">
+					</div>
+				</div>
+			</div>
+			<div class="grid widgets">
+				<div class="container">
+					<img src="svg/cpu.svg">
+					<a href="https://easyeda.com/">Easyeda</a>
+					<a href="https://www.tinkercad.com/">Tinkercad</a>
+				</div>
+				<div class="container">
+					<img src="svg/dots.svg">
+					<a href="https://chat.openai.com/">ChatGPT</a>
+					<a href="https://www.youtube.com/">Youtube</a>
+					<a href="https://www.gocomics.com/garfield/">Garfield</a>
+					<!-- <a href="https://shopee.co.id/">shopee</a> -->
+				</div>
+			</div>
+		</div>
+		<script src="app.js"></script>
 	</body>
 </html>
